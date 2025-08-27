@@ -15,6 +15,7 @@ int sum_const_ref(const int (&arr)[5]) {
     return s;
 }
 
+#ifndef UNIT_LIB_BUILD
 int main() {
     // C-style array + pointer basics
     int a[5] = {10, 20, 30, 40, 50};
@@ -53,3 +54,4 @@ int main() {
     cout << "Pointers, references, arrays demo complete.\n";
     return 0;
 }
+#endif

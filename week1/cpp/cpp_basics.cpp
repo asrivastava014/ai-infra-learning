@@ -17,6 +17,7 @@ bool is_prime(int n) {
     return true;
 }
 
+#ifndef UNIT_LIB_BUILD
 int main() {
     // variables & types
     int    x = 7;
@@ -62,3 +63,4 @@ int main() {
     cout << "All basics demonstrated.\n";
     return 0;
 }
+#endif
