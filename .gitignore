@@ -9,6 +9,16 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+out/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/Testing/
+**/*.o
+**/*.a
+.ninja*
+*.pyc
+__pycache__/
+*.tar
 develop-eggs/
 dist/
 downloads/

@@ -2,10 +2,10 @@
 include(GoogleTest)   # <-- REQUIRED for gtest_discover_tests
 
 # Build small libs from your demo sources so tests can link to helpers.
-add_library(cpp_basics_lib STATIC ../cpp/cpp_basics.cpp)
+add_library(cpp_basics_lib STATIC ../src/cpp_basics.cpp)
 target_compile_definitions(cpp_basics_lib PRIVATE UNIT_LIB_BUILD)
 
-add_library(cpp_ptrs_lib STATIC ../cpp/cpp_pointers_arrays.cpp)
+add_library(cpp_ptrs_lib STATIC ../src/cpp_pointers_arrays.cpp)
 target_compile_definitions(cpp_ptrs_lib PRIVATE UNIT_LIB_BUILD)
 
 # Test binaries

@@ -47,9 +47,10 @@ int main() {
     cout << "std::array b size=" << b.size() << ", b[2]=" << b[2] << "\n";
 
     // pointer to const vs const pointer (quick illustration)
-    const int ci = 100;
-    const int* ptr_to_const = &ci; // cannot modify *ptr_to_const
-    int* const const_ptr = &x;  // const pointer (uncomment to play): pointer can't change, *const_ptr can
+    //const int ci = 100;
+    //const int* ptr_to_const = &ci; // cannot modify *ptr_to_const
+    //int* const const_ptr = &x;  // const pointer (uncomment to play): pointer can't change, *const_ptr can
+    
 
     cout << "Pointers, references, arrays demo complete.\n";
     return 0;
