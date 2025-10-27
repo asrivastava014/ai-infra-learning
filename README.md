@@ -14,9 +14,9 @@
 
 ## 🎯 Project Purpose
 This repository tracks my professional upskilling roadmap:
-- **Rebuild technical depth** in Modern C++ 20/23 after years of limited design exposure.  
+- **Technical Expertise** in Modern C++ 20/23 and to align with the current design trend.  
 - **Master Embedded & RTOS development** using Zephyr and ARM Cortex-M.  
-- **Regain design & innovation skills** lost in political work environments.  
+- **Master the Design & innovation skills** to create great products
 - Build a **solid base for AI Infrastructure** — C++ systems + Python ML stack.  
 - Maintain a public GitHub portfolio for interviews (target Holi 2026).
 
