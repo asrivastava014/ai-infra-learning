@@ -1,41 +1,78 @@
-# Daily Learning Notes
+# 📘 Daily & Weekly Learning Notes
 
-This file captures my daily progress, learnings, and blockers.  
-It will serve as my design/learning diary throughout the AI Infra journey.
-
----
-
-## 🗓 Day 1 (Aug 16–28, 2025)
-### ✅ Achievements
-- Verified environment:
-  - g++ 12.3.0
-  - cmake 4.0.3
-  - python3 3.10.12
-  - Docker GPU passthrough with CUDA 12.6
-- Wrote & pushed:
-  - `cpp_basics.cpp` (variables, loops, functions)
-  - `cpp_pointers_arrays.cpp` (pointers, arrays, pass-by-value/ref)
-  - `python_basics.py` (variables, loops, functions)
-  - `numpy_basics.ipynb` (array creation, reshape, slice, matrix multiplication)
-  - `ml_sanity_check.py` (Decision Tree classifier on Iris dataset)
-  - `ranges_pipeline.cpp` (C++20 ranges + lambdas, using `auto&&`)
-- Practiced Git workflow:
-  - Created branches, merged, pushed commits
-  - Fixed merge conflict during LICENSE pull
-- Docker image save/load:
-  - Saved `nvidia/cuda:12.2.0-base-ubuntu22.04` → `cuda_image.tar`
-  - Removed & reloaded successfully
-
-### ⚠️ Issues Faced & Fixes
-- **Ranges pipeline error** (const iterator mismatch) → fixed with `auto&&`.
-- **gtest setup**: switched from Catch2 to GoogleTest for better industry alignment.
-- **Git conflict**: solved with `git pull --rebase` + manual merge.
-- **Running Jupyter in Docker**: required `--allow-root` & mapped workspace volume.
+This document tracks daily progress, experiments, and reflections across
+C++ 20, Embedded Systems, Zephyr RTOS, and AI Infra phases.
 
 ---
 
-## 🔮 Next Steps (Day 2)
-- Deep dive: **C++ core concepts refresher** (pre-C++11 → C++20 evolution).
-- Start **LeetCode practice** (arrays, strings).
-- Extend NumPy notebook (stacking, boolean indexing, broadcasting).
-- Begin documenting design notes (System Thinking).
+## 🗓 Timeline Recap
+| Period | Focus | Status |
+|---------|-------|--------|
+| Aug 2025 | Repo creation + Env setup + Day 1 C++/Python tasks | ✅ Completed |
+| Sep 2025 | Office transition & project deliverables | ⏸ Paused |
+| Oct 25 2025 → Restart | Resuming with C++ 20 & Zephyr foundation | 🚀 Active |
+
+---
+
+## 🧱 Core Setup Validation
+- ✅ `g++ 12.3 · CMake 4.0.3 · Python 3.10 · CUDA 12.6`  
+- ✅ Docker image load/test (`nvidia/cuda:12.2.0-base-ubuntu22.04`)  
+- ✅ Jupyter Lab functional (NumPy demo ok)  
+- ✅ GoogleTest integrated in CMake workflow  
+
+---
+
+## 📚 Learning Log – Phase 1 Kickoff
+### C++ 20 Re-Foundation
+- Refreshed: variables · refs · pointers · loops · functions.  
+- Practiced: ranges & lambda composition.  
+- Understood: `auto&&` for range views + lvalue/rvalue binding.  
+- Explored: `concepts` + `requires` + `std::span`.
+
+### Python Bridge
+- Built NumPy arrays (reshape · slice · matmul).  
+- Ran DecisionTreeClassifier on Iris dataset → pred = true label ✅.  
+- Set up notebooks for broadcasting & stacking (next task).
+
+### Toolchain / Infra
+- Docker save/load ✅.  
+- Git workflow (clean rebase · branch isolation) ✅.  
+- CMake + GTest runner validated through `scripts/build.sh`.  
+
+---
+
+## ⚙️ Next Immediate Steps ( Oct 25 – Nov 7 )
+1. Deep dive C++ 20 (Concepts · Ranges · std::span · Design Patterns).  
+2. Install Zephyr SDK + run `hello_world` on QEMU Cortex-M3.  
+3. Create custom Zephyr app `blinky/` + scripted build pipeline.  
+4. Document design insights in NOTES.md daily (keep git clean).  
+5. Start Raspberry Pi SDK research for Phase 2.  
+
+---
+
+## 🧩 Concepts Snapshot
+- **auto && in templates** → universal reference for perfect forwarding.  
+- **Input vs Random Ranges** → why `std::ranges::sort` requires random access.  
+- **constexpr vs runtime computation** in C++ 20 constexpr functions.  
+- **QEMU** → emulates Cortex-M3 hardware for Zephyr dev without board.  
+
+---
+
+## 🧠 Reflections
+> “Consistency outperforms intensity.”  
+Every hour spent here is a step away from corporate dependency and toward technical freedom.  
+
+---
+
+## 🔖 Week 1 Complete Check
+☑ C++ 20 Snippets Builds  
+☑ GTest Running  
+☑ Python Sanity Model OK  
+☑ Docker Pipeline OK  
+☑ Zephyr Env Planned  
+☑ GitHub Repo Clean Structure  
+
+---
+
+## 📆 Next Review
+➡ **Nov 7 2025:** Confirm Zephyr hello world + concept labs completion before Week 2 start.
